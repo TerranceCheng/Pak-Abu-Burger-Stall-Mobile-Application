@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:touchscreenBlocksFocus="true"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/divider3"
+    tools:ignore="SpeakableTextPresentCheck">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FBEED6"
+    android:backgroundTint="#FBEED6"
+    tools:context=".OrderUpdate">
+
+    <TextView
+        android:id="@+id/detailTextView"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="#684E09"
+        android:elegantTextHeight="true"
+        android:gravity="center|center_vertical"
+        android:lines="2"
+        android:singleLine="false"
+        android:text="@string/order_detail"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:autoSizeMinTextSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailTextView" />
+
+    <TextView
+        android:id="@+id/homeTextView"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:background="#B3710E"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="@string/home"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFDAC1"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFCFAB"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/detailTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <TextView
+        android:id="@+id/brownDivider"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:background="#684E09"
+        android:paddingStart="16dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateTotalAmountTextView" />
+
+    <TextView
+        android:id="@+id/brownDivider2"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:background="#684E09"
+        android:paddingStart="16dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateChangeTextView" />
+
+    <TextView
+        android:id="@+id/brownDivider3"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:background="#684E09"
+        android:paddingStart="16dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paymentMethodTextView2" />
+
+    <TextView
+        android:id="@+id/brownDivider4"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:background="#684E09"
+        android:paddingStart="16dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lambSpecialPattyAmountTextView" />
+
+    <TextView
+        android:id="@+id/brownDivider5"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:background="#684E09"
+        android:paddingStart="16dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeTextView" />
+
+    <TextView
+        android:id="@+id/updateNetPriceTextView"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:background="#B3710E"
+        android:gravity="center"
+        android:text="net price"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/paymentMethodTextView2"
+        app:layout_constraintTop_toBottomOf="@+id/brownDivider3" />
+
+    <TextView
+        android:id="@+id/paymentMethodTextView2"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:background="#B3710E"
+        android:gravity="center"
+        android:text="Pay method"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/dateTextView"
+        app:layout_constraintTop_toBottomOf="@+id/divider13" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:background="#B3710E"
+        android:gravity="center"
+        android:text="date"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/idTextView"
+        app:layout_constraintTop_toBottomOf="@+id/divider10" />
+
+    <TextView
+        android:id="@+id/idTextView"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:background="#B3710E"
+        android:gravity="center"
+        android:text="ID"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/lambSpecialPattyAmountTextView"
+        app:layout_constraintTop_toBottomOf="@+id/brownDivider4" />
+
+    <TextView
+        android:id="@+id/chickenPattyAmountTextView"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:background="#B3710E"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:text="Chicken patty"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/homeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/brownDivider5" />
+
+    <TextView
+        android:id="@+id/chickenSpecialPattyAmountTextView"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:background="#B3710E"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:text="chicken patty (S)"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/homeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/divider15" />
+
+    <TextView
+        android:id="@+id/lambPattyAmountTextView"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:background="#B3710E"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:text="@string/imported_lamb_patty"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/homeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/divider16" />
+
+    <TextView
+        android:id="@+id/lambSpecialPattyAmountTextView"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:background="#B3710E"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:text="Imported lamb patty (s)"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/homeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/divider17" />
+
+    <TextView
+        android:id="@+id/updateDiscountTextView"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:background="#B3710E"
+        android:gravity="center"
+        android:text="discounts"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/updateNetPriceTextView"
+        app:layout_constraintStart_toStartOf="@+id/updateNetPriceTextView"
+        app:layout_constraintTop_toBottomOf="@+id/divider9" />
+
+    <TextView
+        android:id="@+id/updateTotalAmountTextView"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:background="#B3710E"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Total"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/updateDiscountTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/updateDiscountTextView"
+        app:layout_constraintTop_toBottomOf="@+id/divider18" />
+
+    <TextView
+        android:id="@+id/taxDetailTextView"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:background="#B3710E"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Tax"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/updateDiscountTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/updateDiscountTextView"
+        app:layout_constraintTop_toBottomOf="@+id/divider8" />
+
+    <TextView
+        android:id="@+id/updatePaidAmountTextView"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:background="#B3710E"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Paid\namount"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/updateTotalAmountTextView"
+        app:layout_constraintStart_toStartOf="@+id/updateTotalAmountTextView"
+        app:layout_constraintTop_toBottomOf="@+id/brownDivider" />
+
+    <TextView
+        android:id="@+id/updateChangeTextView"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:background="#B3710E"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Change"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/updatePaidAmountTextView"
+        app:layout_constraintStart_toStartOf="@+id/updatePaidAmountTextView"
+        app:layout_constraintTop_toBottomOf="@+id/changeTextView3" />
+
+    <TextView
+        android:id="@+id/divider8"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:paddingStart="8dp"
+        android:paddingLeft="8dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateDiscountTextView" />
+
+    <TextView
+        android:id="@+id/divider18"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:paddingStart="8dp"
+        android:paddingLeft="8dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taxDetailTextView" />
+
+    <TextView
+        android:id="@+id/divider9"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateNetPriceTextView" />
+
+    <TextView
+        android:id="@+id/divider10"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:paddingStart="8dp"
+        android:paddingLeft="8dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTextView" />
+
+    <TextView
+        android:id="@+id/divider15"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:paddingStart="8dp"
+        android:paddingLeft="8dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chickenPattyAmountTextView" />
+
+    <TextView
+        android:id="@+id/divider16"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:paddingStart="8dp"
+        android:paddingLeft="8dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chickenSpecialPattyAmountTextView" />
+
+    <TextView
+        android:id="@+id/divider17"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:paddingStart="8dp"
+        android:paddingLeft="8dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lambPattyAmountTextView" />
+
+    <TextView
+        android:id="@+id/divider13"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:paddingStart="8dp"
+        android:paddingLeft="8dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateTextView" />
+
+    <TextView
+        android:id="@+id/changeTextView3"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:paddingStart="8dp"
+        android:paddingLeft="8dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updatePaidAmountTextView" />
+
+    <TextView
+        android:id="@+id/divider14"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:paddingStart="8dp"
+        android:paddingLeft="8dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateChangeTextView" />
+
+    <TextView
+        android:id="@+id/idTextView2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#FFD973"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:paddingStart="30dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/homeTextView"
+        app:layout_constraintStart_toEndOf="@+id/idTextView"
+        app:layout_constraintTop_toTopOf="@+id/idTextView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/chickenSpecialPattyAmountTextView2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#FFD973"
+        android:ems="10"
+        android:gravity="center|center_vertical"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/chickenPattyAmountTextView2"
+        app:layout_constraintStart_toEndOf="@+id/chickenSpecialPattyAmountTextView"
+        app:layout_constraintTop_toTopOf="@+id/chickenSpecialPattyAmountTextView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/chickenPattyAmountTextView2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#FFD973"
+        android:ems="10"
+        android:gravity="center|center_vertical"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/homeTextView"
+        app:layout_constraintStart_toEndOf="@+id/chickenPattyAmountTextView"
+        app:layout_constraintTop_toTopOf="@+id/chickenPattyAmountTextView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/netPriceDetailTextView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#FFD973"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:paddingStart="30dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/homeTextView"
+        app:layout_constraintStart_toEndOf="@+id/updateNetPriceTextView"
+        app:layout_constraintTop_toTopOf="@+id/updateNetPriceTextView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/paidDetailTextView"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#FFD973"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:paddingStart="30dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/homeTextView"
+        app:layout_constraintStart_toEndOf="@+id/updateNetPriceTextView"
+        app:layout_constraintTop_toTopOf="@+id/updatePaidAmountTextView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/changeDetailTextView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#FFD973"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:paddingStart="30dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/homeTextView"
+        app:layout_constraintStart_toEndOf="@+id/updateNetPriceTextView"
+        app:layout_constraintTop_toTopOf="@+id/updateChangeTextView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/discountDetailTextView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#FFD973"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:paddingStart="30dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/homeTextView"
+        app:layout_constraintStart_toEndOf="@+id/updateDiscountTextView"
+        app:layout_constraintTop_toTopOf="@+id/updateDiscountTextView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/taxDetailTextView2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#FFD973"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:paddingStart="30dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/homeTextView"
+        app:layout_constraintStart_toEndOf="@+id/taxDetailTextView"
+        app:layout_constraintTop_toTopOf="@+id/taxDetailTextView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/totalDetailTextView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#FFD973"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:paddingStart="30dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/homeTextView"
+        app:layout_constraintStart_toEndOf="@+id/updateTotalAmountTextView"
+        app:layout_constraintTop_toTopOf="@+id/updateTotalAmountTextView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/lambPattyAmountTextView2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#FFD973"
+        android:ems="10"
+        android:gravity="center|center_vertical"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/chickenSpecialPattyAmountTextView2"
+        app:layout_constraintStart_toEndOf="@+id/lambPattyAmountTextView"
+        app:layout_constraintTop_toTopOf="@+id/lambPattyAmountTextView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/lambSpecialPattyAmountTextView2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#FFD973"
+        android:ems="10"
+        android:gravity="center|center_vertical"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/lambPattyAmountTextView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/lambSpecialPattyAmountTextView"
+        app:layout_constraintTop_toTopOf="@+id/lambSpecialPattyAmountTextView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/paymentMethodTextView3"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#FFD973"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:paddingStart="30dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/homeTextView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/paymentMethodTextView2"
+        app:layout_constraintTop_toTopOf="@+id/paymentMethodTextView2"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/dateTextView2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#FFD973"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:paddingStart="30dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/homeTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/dateTextView"
+        app:layout_constraintTop_toTopOf="@+id/dateTextView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

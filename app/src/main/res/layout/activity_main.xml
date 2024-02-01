@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBEED6"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/appNameLabel"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="#684E09"
+        android:gravity="center|center_vertical"
+        android:lines="2"
+        android:padding="8dp"
+        android:singleLine="false"
+        android:text="Pak Abu\nBurger Stall"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:autoSizeMinTextSize="32sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:background="#000000"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appNameLabel" />
+
+    <Button
+        android:id="@+id/newOrderButton"
+        android:layout_width="261dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="70dp"
+        android:onClick="onClick"
+        android:text="New order"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="24sp"
+        app:backgroundTint="#B3710E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <Button
+        android:id="@+id/memberButton"
+        android:layout_width="261dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="30dp"
+        android:text="Member list"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:backgroundTint="#B3710E"
+        app:layout_constraintEnd_toEndOf="@+id/newOrderButton"
+        app:layout_constraintStart_toStartOf="@+id/newOrderButton"
+        app:layout_constraintTop_toBottomOf="@+id/newOrderButton" />
+
+    <Button
+        android:id="@+id/historyButton"
+        android:layout_width="261dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="30dp"
+        android:text="Order history"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:backgroundTint="#B3710E"
+        app:layout_constraintEnd_toEndOf="@+id/memberButton"
+        app:layout_constraintStart_toStartOf="@+id/memberButton"
+        app:layout_constraintTop_toBottomOf="@+id/memberButton" />
+
+    <TextView
+        android:id="@+id/dateTimeLabel"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="#684E09"
+        android:gravity="center|center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="8dp"
+        android:singleLine="false"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

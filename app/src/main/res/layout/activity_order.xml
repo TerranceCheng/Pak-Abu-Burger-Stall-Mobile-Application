@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/divider3"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBEED6"
+        tools:context=".OrderActivity">
+
+        <TextView
+            android:id="@+id/paymentTextView"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:background="#684E09"
+            android:elegantTextHeight="true"
+            android:gravity="center|center_vertical"
+            android:lines="2"
+            android:singleLine="false"
+            android:text="New order"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:autoSizeMinTextSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/divider2"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#000000"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:paddingEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/paymentTextView" />
+
+        <TextView
+            android:id="@+id/homeTextView"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="#B3710E"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="Home"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFDAC1"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFCFAB"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+        <TextView
+            android:id="@+id/divider3"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#000000"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:paddingEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeTextView" />
+
+
+        <ImageView
+            android:id="@+id/chickenPattyImage"
+            android:layout_width="123dp"
+            android:layout_height="104dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pattyTextView"
+            app:srcCompat="@drawable/chicken_patty_image" />
+
+        <ImageView
+            android:id="@+id/chickenSpecialPattyImage"
+            android:layout_width="123dp"
+            android:layout_height="104dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="@+id/chickenPattyImage"
+            app:layout_constraintTop_toBottomOf="@+id/chickenPattyImage"
+            app:srcCompat="@drawable/burger_ramly" />
+
+        <ImageView
+            android:id="@+id/importedLambPattyImage"
+            android:layout_width="123dp"
+            android:layout_height="104dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="@+id/chickenSpecialPattyImage"
+            app:layout_constraintTop_toBottomOf="@+id/chickenSpecialPattyImage"
+            app:srcCompat="@drawable/imported_lamb_patty" />
+
+        <ImageView
+            android:id="@+id/importedSpecialLambPattyImage"
+            android:layout_width="123dp"
+            android:layout_height="104dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="@+id/importedLambPattyImage"
+            app:layout_constraintTop_toBottomOf="@+id/importedLambPattyImage"
+            app:srcCompat="@drawable/imported_special_lamb_patty" />
+
+        <TextView
+            android:id="@+id/chickenPattyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Chicken"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/chickenPattyImage"
+            app:layout_constraintTop_toTopOf="@+id/chickenPattyImage" />
+
+        <TextView
+            android:id="@+id/pattyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Patty"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+        <TextView
+            android:id="@+id/chickenSpecialPattyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Chicken (Special)"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/chickenSpecialPattyImage"
+            app:layout_constraintTop_toTopOf="@+id/chickenSpecialPattyImage" />
+
+        <TextView
+            android:id="@+id/importedLambPattyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Imported Lamb"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/importedLambPattyImage"
+            app:layout_constraintTop_toTopOf="@+id/importedLambPattyImage" />
+
+        <TextView
+            android:id="@+id/ImportedSpecialLambPattyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Imported Lamb (Special)"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/importedSpecialLambPattyImage"
+            app:layout_constraintTop_toTopOf="@+id/importedSpecialLambPattyImage" />
+
+        <TextView
+            android:id="@+id/netPriceTextView2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="#FFD973"
+            android:gravity="start|center_vertical"
+            android:paddingStart="15dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/updateNetPriceTextView"
+            app:layout_constraintTop_toTopOf="@+id/updateNetPriceTextView" />
+
+        <TextView
+            android:id="@+id/updateNetPriceTextView"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="#B3710E"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="Calculate"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider6" />
+
+        <TextView
+            android:id="@+id/payTextView"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="#B3710E"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="Check out"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+        <TextView
+            android:id="@+id/ImportedLampPattyPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="RM 8.80 "
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/importedLambPattyImage"
+            app:layout_constraintTop_toBottomOf="@+id/ImportedLampPattyNetPriceTextView" />
+
+        <TextView
+            android:id="@+id/ImportedSpecialLampPattyPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="RM 11.00 "
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/importedSpecialLambPattyImage"
+            app:layout_constraintTop_toBottomOf="@+id/ImportedSpecialLampPattyNetPriceTextView" />
+
+        <TextView
+            android:id="@+id/chickenSpecialPattyPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="RM 5.00"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/chickenSpecialPattyImage"
+            app:layout_constraintTop_toBottomOf="@+id/chickenSpecialPattyTextView" />
+
+        <TextView
+            android:id="@+id/chickenSpecialPattyPriceTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="RM 4.00"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/chickenPattyImage"
+            app:layout_constraintTop_toBottomOf="@+id/chickenPattyTextView" />
+
+        <TextView
+            android:id="@+id/ImportedSpecialLampPattyNetPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Net Price: RM 10.00"
+            android:textColor="#807D7D"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/importedSpecialLambPattyImage"
+            app:layout_constraintTop_toBottomOf="@+id/ImportedSpecialLambPattyTextView" />
+
+        <TextView
+            android:id="@+id/ImportedLampPattyNetPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Net Price: RM 8.00"
+            android:textColor="#807D7D"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/importedLambPattyImage"
+            app:layout_constraintTop_toBottomOf="@+id/importedLambPattyTextView" />
+
+        <TextView
+            android:id="@+id/taxTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="4dp"
+            android:text="(10% SST included)"
+            android:textColor="#807D7D"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/ImportedLampPattyPriceTextView"
+            app:layout_constraintTop_toBottomOf="@+id/ImportedLampPattyNetPriceTextView" />
+
+        <TextView
+            android:id="@+id/taxTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="4dp"
+            android:text="(10% SST included)"
+            android:textColor="#807D7D"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/ImportedSpecialLampPattyPriceTextView"
+            app:layout_constraintTop_toBottomOf="@+id/ImportedSpecialLampPattyNetPriceTextView" />
+
+        <TextView
+            android:id="@+id/dateTimeLabel2"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:background="#684E09"
+            android:gravity="center|center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="8dp"
+            android:singleLine="false"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider5" />
+
+        <Spinner
+            android:id="@+id/importedLambPattySpinner"
+            android:layout_width="184dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="5dp"
+            android:background="#B3710E"
+            android:dropDownSelector="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/importedLambPattyImage"
+            app:layout_constraintTop_toBottomOf="@+id/ImportedLampPattyPriceTextView"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Spinner
+            android:id="@+id/importedSpecialLambPattySpinner"
+            android:layout_width="184dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="5dp"
+            android:background="#B3710E"
+            android:dropDownSelector="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/importedSpecialLambPattyImage"
+            app:layout_constraintTop_toBottomOf="@+id/ImportedSpecialLampPattyPriceTextView"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Spinner
+            android:id="@+id/chickenSpecialPattySpinner"
+            android:layout_width="184dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="5dp"
+            android:background="#B3710E"
+            app:layout_constraintStart_toEndOf="@+id/chickenSpecialPattyImage"
+            app:layout_constraintTop_toBottomOf="@+id/chickenSpecialPattyPriceTextView"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat" />
+
+        <Spinner
+            android:id="@+id/chickenPattySpinner"
+            android:layout_width="184dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="5dp"
+            android:background="#B3710E"
+            android:textColor="#000000"
+            app:layout_constraintStart_toEndOf="@+id/chickenPattyImage"
+            app:layout_constraintTop_toBottomOf="@+id/chickenSpecialPattyPriceTextView2"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/divider4"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#000000"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:paddingEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/netPriceTextView2" />
+
+        <TextView
+            android:id="@+id/divider6"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#000000"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:paddingEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/memberSwitch" />
+
+        <TextView
+            android:id="@+id/divider5"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#000000"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:paddingEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/payTextView" />
+
+        <Switch
+            android:id="@+id/memberSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="24dp"
+            android:text="Member"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/importedSpecialLambPattyImage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>

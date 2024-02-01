@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">[IT212N] Assignment 1 (Cheng Yong Tat) (2021 10 13)</string>
+    <string name="chicken_patty">Chicken Patty</string>
+    <string name="order_detail">Order detail</string>
+    <string name="home">Home</string>
+    <string name="imported_lamb_patty">Imported lamb patty</string>
+</resources>

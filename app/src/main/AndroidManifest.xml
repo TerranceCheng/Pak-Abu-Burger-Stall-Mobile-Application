@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.terrance.classactivity.it212nassignment1chengyongtat20211013">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IT212NAssignment1ChengYongTat20211013">
+        <activity
+            android:name=".MemberUpdate"
+            android:exported="true" />
+        <activity
+            android:name=".MemberAdd"
+            android:exported="true" />
+        <activity
+            android:name=".OrderUpdate"
+            android:exported="true"
+            android:parentActivityName=".OrderRecordHistory" />
+        <activity
+            android:name=".OrderRecordHistory"
+            android:exported="true" />
+        <activity
+            android:name=".ewalletPaymentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CashThankYouActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="true"
+            android:parentActivityName=".OrderActivity" />
+        <activity
+            android:name=".MemberActivity"
+            android:exported="true"
+            android:parentActivityName=".MemberAdd" />
+        <activity
+            android:name=".OrderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
