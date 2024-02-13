@@ -1,3 +1,5 @@
+// This page is used to display the member list
+
 package com.terrance.classactivity.it212nassignment1chengyongtat20211013;
 
 import androidx.annotation.NonNull;
