@@ -1,3 +1,5 @@
+// This is the main page of this application
+
 package com.terrance.classactivity.it212nassignment1chengyongtat20211013;
 
 import androidx.appcompat.app.AppCompatActivity;
